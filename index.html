@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b858652272.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>calculate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4 formzy">
+                <form  class="fat">
+
+                    <!-- Display board -->
+                    <div class="result text-right" id="output" >
+                        
+                    </div>
+
+                    <div class="keys">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" id="clear">C</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" value="/">&divide;</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" value="*">&times;</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" id="deleteKey">D</button>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="7">7</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn num" value="8">8</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="9">9</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" value="-">&minus;</button>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="4">4</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn num" value="5">5</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="6">6</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" value="+">&plus;</button>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="1">1</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn num" value="2">2</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="3">3</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but">&lambda;</button>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value=".">.</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn num" value="0">0</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn  num" value="%">&percnt;</button>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-warning but" id="submit">&equals;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./ajax/libs/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
